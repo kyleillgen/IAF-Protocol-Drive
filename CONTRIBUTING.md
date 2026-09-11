@@ -9,3 +9,5 @@ On Windows, from packages/portable run `npm test` (Node 18+) and `powershell -No
 Bug reports should include package version, Windows/PowerShell and CLI versions, setup path, exact failed step, expected behavior and a redacted error. The doctor report deliberately omits configured paths and usernames. Do not attach whole run folders. Please report a potential secret exposure privately through the repository owner's GitHub profile contact options instead of posting the secret in an issue.
 
 The first release goal is a dependable foundation: explicit ownership, preservation of existing work, independently reviewed results and honest evidence. Avoid new automatic retries, silent provider switches or global machine changes.
+
+For this Drive variant, also run packages/google-drive/test/test-drive.ps1 with Windows PowerShell 5.1. It simulates file transport and never accesses Google. Keep live Drive checks separately documented; do not merge them into unattended CI.

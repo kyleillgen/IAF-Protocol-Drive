@@ -1,0 +1,15 @@
+name: Drive extension checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Simulated Drive exchange
+        shell: powershell
+        run: ./packages/google-drive/test/test-drive.ps1
