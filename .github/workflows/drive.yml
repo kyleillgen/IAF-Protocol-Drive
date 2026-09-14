@@ -1,4 +1,4 @@
-name: Drive extension checks
+name: IAF Protocol Drive checks
 on:
   push:
   pull_request:

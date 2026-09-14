@@ -1,6 +1,6 @@
 # Contributing
 
-AgentOS Portable is an early preview. Small fixes, clearer onboarding and reproducible bug reports are especially useful. Propose larger adapters or features in an issue before implementation; keep the shared file contract and the Windows runner separable.
+IAF Protocol Portable is an early preview. Small fixes, clearer onboarding and reproducible bug reports are especially useful. Propose larger adapters or features in an issue before implementation; keep the shared file contract and the Windows runner separable.
 
 Fork the repository and open a pull request with the problem, resulting behavior, tests and limitations. Never include personal workspaces, prompts, provider credentials, installed dispatcher configurations or run ledgers. Keep synthetic test fixtures clearly labeled.
 

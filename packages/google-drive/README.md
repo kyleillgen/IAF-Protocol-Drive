@@ -1,12 +1,12 @@
 # Google Drive for desktop extension
 
-Version: 0.1.0-dev. Required base: AgentOS Portable 0.2.1.
+Version: 0.1.0-dev. Required base: IAF Protocol Portable 0.2.1.
 
 This optional extension transfers **selected text files**, not a live workspace mirror. Google Drive for desktop supplies the cloud transport; these scripts prepare and verify packets locally. They cannot prove that Google uploaded or delivered a file.
 
 ## Layout
 
-- **Workspace:** your ordinary local AgentOS Portable folder and dispatcher.
+- **Workspace:** your ordinary local IAF Protocol Portable folder and dispatcher.
 - **ShareRoot:** a dedicated new folder already managed by Drive for desktop. Only approved packets and public exchange metadata go here.
 - **LocalState:** a new private local folder outside both the workspace and Drive. It contains drive.json, operation locks, export snapshots and imported files awaiting review.
 - **Run ledger:** stays in its existing separate local location. This extension does not read or modify it.
@@ -19,7 +19,7 @@ Install/sign in to [Google Drive for desktop](https://support.google.com/drive/a
 
 Google supports streaming and mirroring. Mirrored files have a full local copy; streamed availability depends on offline settings and the running Drive app. See [Google's guide](https://support.google.com/drive/answer/13401938?hl=en). A local file being readable is not proof that a second device can see it.
 
-Do not put your whole AgentOS workspace, run ledger, credentials or installed runner configuration inside the exchange folder. `.gitignore` is not a Drive exclusion list.
+Do not put your whole IAF Protocol workspace, run ledger, credentials or installed runner configuration inside the exchange folder. `.gitignore` is not a Drive exclusion list.
 
 ## 2. Create an exchange
 
